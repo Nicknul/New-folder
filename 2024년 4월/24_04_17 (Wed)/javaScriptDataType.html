@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javaScriptDataType</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: black;
+    font-family: "Noto Sans KR", sans-serif;
+    color: lightgray;
+  }
+
+ body > div {
+  display: grid;
+  grid-template-columns: 7fr repeat(1, 10fr) 7fr;
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 1vw;
+  grid-row-gap: 1vh;
+ }
+/* fontStyle */
+.font50px {font-size: 50px; font-weight: 700;}
+.font12px {font-size: 12px; line-height: 18px; margin-bottom: 30px;}
+.font30px {font-size: 30px; font-weight: 700;}
+
+
+
+  </style>
+</head>
+<body>  
+  <div>
+    <div></div>
+    <div class="font50px">javaScript<br>Data Tpye</div>
+    <div></div>
+    <div></div>
+    <div class="font30px">Number</div>
+    <div></div>
+    <div></div>
+    <div class="font12px">Number는 int (정수) 또는 float (부동 소수점)를 나타냅니다. Number는 숫자를 다루기 위해 상수와  method를 가지고 있습니다. 다른 Type의 값은 number(value)를 이용하여 숫자로 바꿀 수 있습니다. JavaScript Number type은 Java 혹은 C#의 double tpye (true or false)처럼 IEEE 754 64비트 바이너리 배정 밀도 값이다. 즉, 분수 값을 나타낼 수 있지만 저장할 수 있는 값에는 몇 가지 제한이 있습니다. Number는 소수점 이하 17자리 정도만 유지하며 산술은 반올림의 대상이 됩니다. Number가 가질 수 있는 가장 큰 값은 1.8E308 입니다. 그보다 더 큰 값은 특별한 Number 상수인 Infinity으로 대체됩니다.</div>
+    <div></div>
+    <div></div>
+    <div class="font30px">Character</div>
+    <div></div>
+    <div></div>
+    <div class="font12px">문자의 예로는 문자, 숫자, 일반적인 구두점(ex, “.”또는 “-”) 및 공백이 있습니다. 문자소, 문자소 유사 단위 또는 자연어의 문자 형태로 된 알파벳이나 음절과 같은 기호에 대략적으로 해당하는 정보 단위이다.<br>
+    컴퓨터 및 통신 장비는 각 문자를 무언가(일련의 비트로 대표되는 정수의 양, 일반적으로는 네트워크를 통해 전달되거나 저장 가능)에 할당하는 문자 인코딩을 이용하여 문자를 대표한다. 대표적인 예로 아스키, 그리고 유니코드를 위한 UTF-8가 있다.<br>
+    'word' 문자는 일부 전산 측면에서 특별한 의미를 지닌다. word 문자는 일반적으로 A-Z (대,소문자)와 0에서 9까지의 숫자, 그리고 _를 포함한다.</div>
+    <div></div>
+    <div></div>
+    <div class="font30px">String</div>
+    <div></div>
+    <div></div>
+    <div class="font12px">문자열은 기호의 순차 수열을 말한다. 스트링(string)이라고도 한다. 이러한 기호는 미리 정의된 집합이나 음소 문자에서 선택한다. 프로그래밍 언어에서 스트링은 “time”, “space”, “문자”, “123” 등과 같이 몇 개의 문자들로 구성된 문자열(string) 하나를 값으로 취할 수 있는 변수를 의미한다. 참고로, 자바에서는 스트링 값(문자값)에 “123”이 입련된 경우, 큰 따옴표 안에 있는 123을 숫자가 아닌 문자로 본다.</div>
+    <div></div>
+    <div></div>
+    <div class="font30px">Boolean</div>
+    <div></div>
+    <div></div>
+    <div class="font12px">컴퓨터 과학에서 불리언(boolean) 은 논리적인 데이터 유형이다.. boolean은 참(true) 혹은 거짓(false) 단 2가지 값 만을 가질 수 있습니다. false이 나온다고 실패가 아닌 방향이 다른 것이다. 옳고 그름을 판단하는 것이 아닌 이것과 저것, 이쪽 아니면 저쪽의 느낌이다.<br>
+    avascript에서 불리언 조건은 어떤 코드 부문이 실행되어야 할 지(예를 들어 if 절 안에서) 또는 어떤 코드 부문을 반복해야 할지(예를 들어 for 문 안에서)  결정하는 데 사용된다.</div>
+    <div></div>
+    <div></div>
+    <div class="font30px">Array</div>
+    <div></div>
+    <div></div>
+    <div class="font12px">배열(array)는 번호(인덱스)와 번호에 대응하는 데이터들로 이루어진 자료 구조를 나타낸다. 일반적으로 배열에는 같은 종류의 데이터들이 순차적으로 저장되어, 값의 번호가 곧 배열의 시작점으로부터 값이 저장되어 있는 상대적인 위치가 된다.<br>
+    대부분의 프로그래밍 언어에서 사용할 수 있는 가장 기초적인 자로 구조로, 기본적인 용도 외에 다른 복잡한 자료 구조들을 표현하기 위해서 또는 행렬, 벡터 등을 컴퓨터에서 표현하는 용도 등으로도 사용된다.</div>
+    <div></div>
+    <div></div>
+    <div class="font30px">Function</div>
+    <div></div>
+    <div></div>
+    <div class="font12px">다른 코드에서 또는 자신에 의해 호출되거나 함수 레퍼런스를 저장한 변수에 의해 호출될 수 있는 코드 조각이다. 함수가 호출될 때, 함수의 입력으로 인수가 전달되고 함수는 선택적으로 출력값을 반환할 수 있다.<br>
+    또한 JavaScript에서 함수는 객체이기도 하다. 함수명은 함수 선언문 또는 함수 표현식의 일부로써 선언된 식별자이다. 함수 이름의 범위는 함수 이름의 선언식 또는 표현식인지에 따라 결정된다.</div>
+    <div></div>
+    <div></div>
+    <div class="font30px">Object</div>
+    <div></div>
+    <div></div>
+    <div class="font12px">객체(Object)는 JavaScript에서, 객체는 속성의 모음으로 볼 수 있다. 하위 그룹들을 묶어 놓는 특성이 있다. 속성 값은 복잡한 데이터 구조를 구축할 수 있는, 다른 객체를 포함하여 모든 유형의 값이 될 수 있다. 속성은 항목 이름을 나타내는 key, 항목 값을 나타내는 ‘value’ 항목을 나타내는 ‘field’, ‘entity’, ‘property’가 있다</div>
+      
+
+  </div>
+
+
+
+  <script>
+    var div = window.document.querySelector('div');
+
+    var content = {
+      static : {
+        name1 : "편의점 아이스크림",
+        name2 : "식당에서 파는 소주",
+        name3 : "파리바게트 소세지빵",
+        name4 : "영양제",
+        name5 : "색연필",
+        name6 : "식당에서 파는 짜장면",
+      },
+      dynamic : {
+        name1 : "베스킨라빈스",
+        name2 : "칵테일바",
+        name3 : "내가 직접 베이킹",
+        name4 : "한약",
+        name5 : "물감",
+        name6 : "인스턴트 짜파게티",
+      }
+    };
+
+    window.console.log(content);
+    // h1.textContent = content.static.name1;
+    // h1.textContent = content.dynamic.name1;
+    // div.textContent = content.dynamic.name1
+    // h1를 textContent화 해줘 -> static.name 할당해서 보여줘
+  </script>
+
+</body>
+</html>

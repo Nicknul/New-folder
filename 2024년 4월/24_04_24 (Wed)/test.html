@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test</title>
+</head>
+<body>
+  <body>
+    <div id="root"></div>
+  
+
+    
+  <script>
+    document.body.onload = trueChange(2, 2, 2);
+
+    function trueChange(first, second, third) {
+      let newDiv = document.createElement("div");
+      let newContent = document.createTextNode(first+second*third);
+      let root = document.getElementById('root')
+      
+      newDiv.appendChild(newContent);
+      document.body.insertBefore(newDiv, root);      
+    }
+
+    
+
+
+
+  </script>
+  </body>
+</html>

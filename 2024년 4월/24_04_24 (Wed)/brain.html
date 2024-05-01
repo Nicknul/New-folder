@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>brain</title>
+</head>
+<body>
+  <div></div>
+
+
+  <script>
+
+    // 만들 것 : 2+2*2 = 6
+
+    // function a() {
+    //   console.log(2+2*2);
+    // }  // 콘솔에 찍는 역할만 하고 끝남 (아웃풋만 함)
+    // a();
+
+    // function a(first, second, third) {
+    //   console.log(first+second*third);
+    //   if (first === 2) {
+    //     console.log("당첨!")
+    //   } else {
+    //     console.log("메롱~")
+    //   }
+    // }  
+    // a(2,2,2); 
+    // 값은 모르지만 기능은 한다. 호출만 잘되면 연산을 할 것이라는 '보장'이 생긴다.
+    // 매개 변수에 값을 넣어준 것이다.
+    // 나는 먹는다. 초코에몽을, 나는 한다. 공부를 이런 느낌
+
+    // ID를 이용하여 렌더링
+    // function a(first, second, third) {
+    //   let root = document.getElementById('root');
+    //   root.children[0].innerHTML = first+second*third
+    //   console.log(first+second*third);
+    //   if (first === 2) {
+    //     console.log("당첨!")
+    //   } else {
+    //     console.log("메롱~")
+    //   }
+    // }  
+    // a(2,2,2); 
+    
+
+    // tagName를 사용하여 렌더링
+    function a(first, second, third) {
+      let div = document.getElementsByTagName('div')
+      div[0].innerHTML = first+second*third
+      console.log(first+second*third);
+      if (first === 2) {
+        console.log("당첨!")
+      } else {
+        console.log("메롱~")
+      }
+    }
+    a(2,2,2);
+
+
+    function b(first, second, third) {
+      return first+second*third;
+    } //연산하고 뱉어내는 역할만 하지, 콘솔에 찍히지 않음 (인풋만 함)
+
+    console.log(b(2,2,2))
+
+    // a, b와 결과적으로 같은 값을 내지만, 내용물은 다르다.
+    // 리터럴 값이 너무 많아, 걸러줄래? 내가 입력했을 때, 융통성 있게 해줘
+    // 매개 변수를 다르게 한다면 농도가 달라진다.
+    // 만약에 첫번째 값이 2가 아니라면 '메롱'을 찍어줘
+
+    // if (a[0] !== 2) {
+    //   console.log("당첨!")
+    // } else {
+    //   console.log("메롱")
+    // }
+
+
+  </script>
+
+</body>
+</html>

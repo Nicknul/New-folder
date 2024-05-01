@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subejct-2 정호연</title>
+</head>
+<body>
+  <div id="root">
+    <div>구하림</div>
+    <div>김보미</div>
+    <div>김수현</div>
+    <div>김정수</div>
+    <div>문혜림</div>
+    <div>배성빈</div>
+    <div>백지원</div>
+    <div>송이현</div>
+    <div>신지윤</div>
+    <div>유으뜸</div>
+    <div>유호영</div>
+    <div>이연승</div>
+    <div>이재영</div>
+    <div>이종수</div>
+    <div>임유진</div>
+    <div>정호연</div>
+    <div>조우식</div>
+    <div>조자연</div>
+    <div>최유진</div>
+    <div>황재민</div>
+  </div>
+
+  <script>
+    function gridTemplateColumns(a,b,c){
+    let min900 = window.matchMedia("screen and (min-width:900px)");
+    let max600 = window.matchMedia("screen and (max-width:600px)");
+    let max900min601 = window.matchMedia("screen and (min-width: 601px) and (max-width: 900px)");
+
+    min900.onchange = (e)=>{
+    if(e.matches){
+      document.getElementById('root').style.gridTemplateColumns = a;
+    }
+  }
+    max600.onchange = (e)=>{
+    if(e.matches){
+      document.getElementById('root').style.gridTemplateColumns = b;
+    }
+  }
+    max900min601.onchange = (e)=>{
+    if(e.matches){
+      document.getElementById('root').style.gridTemplateColumns = c;
+    }
+  }
+  }
+  gridTemplateColumns('repeat(5, 1fr', 'repeat(1, 1fr)', 'repeat(3, 1fr');
+
+    let bodyTags = [
+      "margin",
+      "padding",
+      "boxSizing",
+      "overflowX",
+    ]
+
+    let rootTags = [
+      "display",
+      "gridTemplateColumns",
+      "gridTemplateRows",
+      "gap",
+      "width",
+      "minHeight",
+      "height",
+      "margin",
+      "gridAutoRows",
+    ]
+
+    let childrenTags = [
+      "display",
+      "alignItems",
+      "justifyContent",
+      "fontSize",
+      "backgroundColor",
+      "border",
+      "padding",
+    ]
+
+    let all = {
+      margin: 0,
+      padding: 0,
+      boxSizing: 'border-box',
+      overflowX: 'hidden',
+    }
+
+    let root = {
+      display: 'grid',
+      gridTemplateColumns: 'repeat(5, 1fr)',
+      // gridTemplateRows: 'repeat(4, 1fr)',
+      gap: '4vw',
+      width: '100vw',
+      minHeight: '100vh',
+      height: 'auto',
+      margin: '2vw auto',
+      gridAutoRows: 'minmax(150px, auto)',
+    }
+
+    let children = {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      fontSize: '1rem',
+      backgroundColor: '#f0f0f0',
+      border: '1px solid #ccc',
+      padding: '1vw',
+    }
+
+  
+
+    let div = document.getElementsByTagName('div');
+
+    for (let item of bodyTags) {
+      document.body.style[item] = all[item]; // style body
+      for (let item of rootTags) {
+        document.getElementById('root').style[item] = root[item]; // style id = "root"
+      }
+      for (let a = 0; a < div.length; a++) { // div.children
+        for (let item of childrenTags){
+        document.getElementById('root').children[a].style[item] = children[item] // style id="root" > div
+        }
+      }
+    }
+
+  
+
+
+
+
+    // for (let item of childrenTags) {
+    //     div[4].style[item] = children[item];
+    //   }
+
+      
+  </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>static vs dynamic</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: black;
+    font-family: "Noto Sans KR", sans-serif;
+    color: lightgray;
+  }
+
+ body > div {
+  display: grid;
+  grid-template-columns: 7fr repeat(1, 10fr) 7fr;
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 1vw;
+  grid-row-gap: 1vh;
+ }
+/* fontStyle */
+.font50px {font-size: 50px; font-weight: 700;}
+.font12px {font-size: 12px; line-height: 18px; margin-bottom: 30px;}
+.font30px {font-size: 30px; font-weight: 700;}
+
+
+
+  </style>
+</head>
+<body>
+
+  <script>
+    var div = window.document.querySelector('div');
+
+    var content = {
+      static : {
+        name1 : "편의점 아이스크림",
+        name2 : "식당에서 파는 소주",
+        name3 : "파리바게트 소세지빵",
+        name4 : "영양제",
+        name5 : "색연필",
+        name6 : "식당에서 파는 짜장면",
+      },
+      dynamic : {
+        name1 : "베스킨라빈스",
+        name2 : "칵테일바",
+        name3 : "내가 직접 베이킹",
+        name4 : "한약",
+        name5 : "물감",
+        name6 : "인스턴트 짜파게티",
+      }
+    };
+
+    window.console.log(content);
+    // h1.textContent = content.static.name1;
+    // h1.textContent = content.dynamic.name1;
+    // div.textContent = content.dynamic.name1
+    // h1를 textContent화 해줘 -> static.name 할당해서 보여줘
+  </script>
+
+</body>
+</html>

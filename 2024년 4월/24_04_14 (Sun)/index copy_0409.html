@@ -1,0 +1,2036 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoyeon test</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-gray-1:rgb(102, 102, 102);
+      --color-gary-2:rgb(42, 42, 42);
+      --color-white:white;
+      --width-10 : 10%
+    }   
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Noto Sans KR", sans-serif;
+    }
+    
+    body {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    div {
+      width:100%;
+      height: 100%;
+      background-color: black;
+      color: white;
+    }
+
+    /*section1*/
+    body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
+      display: flex;
+      height: 5.57%;
+      justify-content: center;
+      background-color: white;
+    }
+    /*section1 bar1 text+search box*/
+    body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div {
+      display: flex;
+      width: 53.33%;
+      justify-content: space-between;
+      background-color: white;
+    }
+    body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div > div:nth-child(1) {
+      width: 41.95%;
+      background-color: var(--color-gray-1);
+    }
+    body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div > div:nth-child(2) {
+      width: 51.80%;
+      background-color: var(--color-gray-1);
+    }
+    /*section1 bar2 category*/
+    body > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
+      display: flex;
+      height: 3.5%;      
+      justify-content: center;
+      background-color: black;
+    }    
+    body > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div {
+      display: flex;
+      width: 53.33%;
+      justify-content: space-between;
+      background-color: black;
+    }
+    body > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div > div {
+      width: 5%;
+      background-color: var(--color-gray-1);
+    }
+    /*section1 bar3 banner*/
+    body > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) {
+      display: flex;
+      height: 6.91%;
+      justify-content: center;
+      background-color: var(--color-gary-2);
+    }
+    /*section1 bar3 banner text*/
+    body > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div {
+      width: 27.92%;
+      background-color: var(--color-gray-1);
+    }    
+    /*section1 content1*/
+    body > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) {
+      display: flex;
+      justify-content: center;
+      height: 84.02%;
+    }
+    body > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > div {
+      width: 53.33%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap : 2vh
+    }
+    body > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > div > div:nth-child(1) {
+      background-color: var(--color-gray-1);
+      width: 20%;
+      height: 5%;
+      margin-top: 15vh;
+    }
+    body > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > div > div:nth-child(2) {
+      background-color: var(--color-gray-1);
+      width: 100%;
+      height: 22.37%;
+    }
+    body > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > div > div:nth-child(3) {
+      background-color: var(--color-gray-1);
+      width: 100%;
+      height: 22.37%;
+    }
+    body > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > div > div:nth-child(4) {
+      background-color: blue;
+      width: 15%;
+      height: 5%;
+      margin-top: 10vh;
+      border: 1px solid transparent;
+      border-radius: 5vw;
+    }
+    body > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > div > div:nth-child(5) {
+      width: 20%;
+      height: 5%;
+      background-color: var(--color-gray-1);
+    }
+
+    /*section2*/
+    body > div:nth-child(2) > div:nth-child(1) {
+      height: 24.56%;
+      display: flex;
+      justify-content: center;
+    }
+    /*section2 content1*/
+    body > div:nth-child(2) > div:nth-child(1) > div {
+      display: flex;
+      width: 65.1%;
+      height: 100%;
+      margin-top: 15vh;
+    }
+    body > div:nth-child(2) > div:nth-child(1) > div > div:nth-child(1) {
+      font-weight: 600;
+      font-size: 5vh;
+      color: var(--color-gray-1);
+    }
+    body > div:nth-child(2) > div:nth-child(1) > div > div:nth-child(2) {
+      color: blue;
+      text-align: end;
+      margin-top: 5vh;
+    }
+    /*section2 content2*/
+    body > div:nth-child(2) > div:nth-child(2) {
+      display: flex;
+      justify-content: center;
+      height: 75.44%;
+    }
+    body > div:nth-child(2) > div:nth-child(2) > div {
+      height: 71.58%;
+      width: 65.63%;
+      border: 1px solid transparent;
+      border-radius: 1vh;
+      background-color: var(--color-gary-2);
+      display: flex;  
+    }
+    body > div:nth-child(2) > div:nth-child(2) > div > div{
+      width: 58%;
+      display: flex;
+      justify-content: space-between;
+      background-color: var(--color-gary-2);
+      border-radius: 1vh;
+    }
+    body > div:nth-child(2) > div:nth-child(2) > div > div > p {
+      margin: 1vh;
+      font-size: 2vh;
+    }
+    body > div:nth-child(2) > div:nth-child(2) > div > div > div {
+      height: 8.24%;
+      width: 26%;
+      background-color: var(--color-gray-1);
+    }
+    /*section3*/
+    body > div:nth-child(3) > div:nth-child(1) {
+      height: 30%;
+      display: flex;
+      justify-content: end;
+    }
+    body > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
+      width: 82.81%;
+      margin-top: 10vw;
+      font-weight: 600;
+      font-size: 40px;
+      color: var(--color-gray-1);
+    }
+    body > div:nth-child(3) > div:nth-child(2) {
+      height: 53.97%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    body > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) {
+      height: 70%;
+      width: 50%;
+      background-color: var(--color-gary-2);
+    }
+    body > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) {
+      height: 10%;
+      width: 20%;
+      font-size: 2vh;
+      background-color: var(--color-gary-2);
+    }
+    body > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) {
+      height: 10%;
+      width: 30%;
+      background-color: var(--color-gary-2);
+    }
+    /*section4*/
+    body > div:nth-child(4) {
+      display: flex;
+      justify-content: end;
+      height: 15%;
+    }
+    body > div:nth-child(4) > div {
+      width: 82.81%;
+      margin-top : 7vh;
+      color: var(--color-gray-1);
+      font-weight: 800;
+      font-size: 5vh;
+    }
+    /*section5*/
+    body > div:nth-child(5) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }    
+    body > div:nth-child(5) > div:nth-child(1) {
+      height: 5%;
+    }
+    /*section5 img*/
+    body > div:nth-child(5) > div:nth-child(2) {
+      height: 70%;
+      width: 54.69%;
+      justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+    }
+    body > div:nth-child(5) > div:nth-child(2) > div {
+      height: 49%;
+      display: flex;
+      justify-content: space-between;
+      background-color: var(--color-gary-2);
+    }
+    body > div:nth-child(5) > div:nth-child(2) > div:nth-child(2){
+      background-color: black;
+    }
+    body > div:nth-child(5) > div:nth-child(2) > div > div {
+      width: 48.8%;
+      background-color: var(--color-gary-2);
+    }
+    /*section5 text*/
+    body > div:nth-child(5) > div:nth-child(3) {
+      display: flex;
+      justify-content: center;
+      height: 25%;
+    }
+    body > div:nth-child(5) > div:nth-child(3) > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 42.16%;
+    }
+    body > div:nth-child(5) > div:nth-child(3) > div > div {
+      height: 70%;
+      display: flex;
+      justify-content: space-between;
+    }
+    body > div:nth-child(5) > div:nth-child(3) > div > div:nth-child(1) > div {
+      width : 39.21%;
+      font-size: 11pt;
+      margin-top: 30px;
+    }
+    body > div:nth-child(5) > div:nth-child(3) > div > div:nth-child(2) {
+      height: 15%;
+      background-color: var(--color-gary-2);
+    }
+    /*section6*/
+    body > div:nth-child(6) {
+      height: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;      
+    }
+    body > div:nth-child(6) > div:nth-child(1) {
+      width: 20%;
+      height: 10%;
+      margin-top: 2.5%;
+    }
+    body > div:nth-child(6) > div:nth-child(2) {
+      width: 25%;
+      height: 70%;
+      background-color: var(--color-gary-2);
+    }
+    /*section7*/
+    body > div:nth-child(7) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    body > div:nth-child(7) > div:nth-child(1) {
+      width: 37.69%;
+      height: 15%;
+      font-size: 25pt;
+      text-align: center;
+      font-weight: 600;
+      margin-top: 50px;
+    }
+    body > div:nth-child(7) > div:nth-child(2) {
+      width: 35%;
+      height: 5%;
+      text-align: center;
+    }
+    body > div:nth-child(7) > div:nth-child(3) {
+      width: 54.9%;
+      height: 30%;
+      background-color: var(--color-gary-2);
+    }
+    body > div:nth-child(7) > div:nth-child(4) {
+      width: 10%;
+      height: 5%;
+    }
+    /*section7 text*/
+    body > div:nth-child(7) > div:nth-child(5) {
+      width: 50%;
+      height: 30%;
+      display: flex;
+      justify-content: space-between;
+    }
+    body > div:nth-child(7) > div:nth-child(5) > div:nth-child(1) {
+      width: 49.87%;
+    }
+    body > div:nth-child(7) > div:nth-child(5) > div:nth-child(1) > div:nth-child(1) {
+      height: 30%;
+      font-size: 10pt;
+    }
+    body > div:nth-child(7) > div:nth-child(5) > div:nth-child(1) > div:nth-child(2) {
+      height: 60%;
+    }
+    body > div:nth-child(7) > div:nth-child(5) > div:nth-child(2) {
+      width: 35%;
+      height: 40%;
+    }
+    body > div:nth-child(7) > div:nth-child(5) > div:nth-child(2) > div {
+      width: 40%;
+      height: 20%;
+    }
+    body > div:nth-child(7) > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) {
+      width: 100%;
+      height: 40%;
+      font-size: 20pt;
+      font-weight: 600;
+    }
+    /*section8*/
+    body > div:nth-child(8) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    body > div:nth-child(8) > div:nth-child(1) {
+      width: 18%;
+      height: 5%;
+      margin-top: 30px;
+    }
+    body > div:nth-child(8) > div:nth-child(2) {
+      width: 50%;
+      height: 15%;
+      font-size: 30pt;
+      font-weight: 600;
+      margin-left: -50px;
+      margin-top: 50px;
+    }
+    body > div:nth-child(8) > div:nth-child(3) {
+      width: 55%;
+      height: 5%;
+    }
+    body > div:nth-child(8) > div:nth-child(4) {
+      width: 68.44%;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    body > div:nth-child(8) > div:nth-child(4) > div:nth-child(1) {
+      height: 90%;
+      background-color: var(--color-gary-2);
+    }
+    body > div:nth-child(8) > div:nth-child(4) > div:nth-child(2) {
+      height: 5%;
+    }
+    /*section9*/
+    body > div:nth-child(9) {
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: space-between;
+    }
+    body > div:nth-child(9) > div:nth-child(1) {
+      width: 80%;
+      height: 15%;
+      font-size: 11pt;
+      margin-top: 100px;
+    }
+    /*section9 img*/
+    body > div:nth-child(9) > div:nth-child(2) {
+      width: 80%;
+      height: 60%;
+      display: flex;
+      justify-content: space-between;
+    }
+    body > div:nth-child(9) > div:nth-child(2) > div {
+      width: 49.5%;
+      background-color: var(--color-gary-2);
+    }
+    /*section9 text*/
+    body > div:nth-child(9) > div:nth-child(3) {
+      width: 100%;
+      height: 5%;
+      display: flex;
+      justify-content: center;
+    }
+    body > div:nth-child(9) > div:nth-child(3) > div {
+      display: flex;
+      justify-content: space-between;
+      width: 60%;
+      text-align: center;
+    }
+    body > div:nth-child(9) > div:nth-child(3) > div > div:nth-child(1) {
+      width: 70%;
+      background-color: black;
+    }
+    body > div:nth-child(9) > div:nth-child(3) > div > div {
+      width: 5%;
+      background-color: var(--color-gary-2);
+    }
+    /*section10*/
+    body > div:nth-child(10) {
+      height: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    body > div:nth-child(10) > div {
+      height: 70%;
+      width: 40%;
+      display: flex;
+      justify-content: space-between;
+    }
+    body > div:nth-child(10) > div > div {
+      width: 48%;
+    }
+    body > div:nth-child(10) > div > div:nth-child(1) {
+      background-color: var(--color-gary-2);
+    }
+    /*section10 text*/
+    body > div:nth-child(10) > div > div:nth-child(2) {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    body > div:nth-child(10) > div > div:nth-child(2) > div {
+      height: 60%;
+    }
+    body > div:nth-child(10) > div > div:nth-child(2) > div:nth-child(1) {
+      margin-top: 30px;
+      height: 20%;
+      font-size: 11pt;
+    }
+    /*section11*/
+    body > div:nth-child(11) {
+      height: 20%;
+      text-align: center;
+      font-weight: 600;
+      font-size: 30px;
+    }
+    /*section12*/
+    body > div:nth-child(12) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 20%;
+    }
+    body > div:nth-child(12) > div {
+      height: 15%;
+      width: 15%;
+    }
+    /*section13*/
+    body > div:nth-child(13) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    /*section13 text1*/
+    body > div:nth-child(13) > div:nth-child(1) {
+      font-size: 30px;
+      font-weight: 600;
+      text-align: center;
+      height: 10%;
+    }
+    /*section13 img*/
+    body > div:nth-child(13) > div:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 55%;
+      width: 70%;
+    }
+    body > div:nth-child(13) > div:nth-child(2) > div:nth-child(1) {
+      height: 80%;
+      background-color: var(--color-gary-2);
+    }
+    body > div:nth-child(13) > div:nth-child(2) > div:nth-child(2) {
+      height: 18%;
+      width: 10%;
+    }
+    /*section13 text2*/
+    body > div:nth-child(13) > div:nth-child(3) {
+      display: flex;
+      justify-content: space-between;
+      height: 30%;
+      width: 40%;
+    }
+    body > div:nth-child(13) > div:nth-child(3) > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 35%;
+    }
+    body > div:nth-child(13) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1){
+      height: 30%;
+      font-size: 13px;
+    }
+    body > div:nth-child(13) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2){
+      height: 65%;
+      font-size: 15px;
+    }
+    body > div:nth-child(13) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1){
+      height: 20%;
+      font-size: 30px;
+      font-weight: 600;
+    }
+    body > div:nth-child(13) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2){
+      font-size: 15px;
+    }
+    /*section14*/
+    body > div:nth-child(14) {
+      display: flex;
+      justify-content: end;
+      height: 20%;
+    }
+    body > div:nth-child(14) > div {
+      width: 84%;
+      margin-top: 15px;
+      font-weight: 600;
+      font-size: 30px;
+    }
+    /*section15*/
+    body > div:nth-child(15) {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+    }
+    body > div:nth-child(15) > div:nth-child(1) {
+      width: 60%;
+      height: 60%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+    body > div:nth-child(15) > div:nth-child(1) > div:nth-child(1) {
+      width : 47%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    body > div:nth-child(15) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
+      height: 30%;
+    }
+    /*section15 icon*/
+    body > div:nth-child(15) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
+      height: 67%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    body > div:nth-child(15) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div {
+      height: 8%;
+    }
+    body > div:nth-child(15) > div:nth-child(1) > div:nth-child(2) {
+      width : 47%;
+      background-color: var(--color-gary-2);
+    }
+    /*section15 text*/
+    body > div:nth-child(15) > div:nth-child(2) {
+      width: 60%;
+      height: 25%;
+      display: flex;
+      justify-content: space-between;
+    }
+    body > div:nth-child(15) > div:nth-child(2) > div {
+      width: 45%;
+      font-size: 13px;
+    }
+    /*section16*/
+    body > div:nth-child(16) {
+      height: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    body > div:nth-child(16) > div {
+      width: 15%;
+      height: 25%;
+    }
+    /*section17*/
+    body > div:nth-child(17) > div:nth-child(1) {
+      height: 25%;
+    }
+    body > div:nth-child(17) > div:nth-child(1) > div {
+      width: 50%;
+      height: 25%;
+      font-size: 30px;
+      font-weight: 600;
+      margin-left: 230px;
+    }
+    body > div:nth-child(17) > div:nth-child(2) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 75%;
+    }
+    body > div:nth-child(17) > div:nth-child(2) > div:nth-child(1) {
+      width: 60%;
+      height: 80%;
+      background-color: var(--color-gary-2);
+      margin-top: -120px;
+    }
+    /*section 18*/
+    body > div:nth-child(18) {
+      height: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    body > div:nth-child(18) > div {
+      display: flex;
+      justify-content: space-between;
+      height: 60%;
+      width: 50%;
+    }
+    /* section18 text2 */
+    body > div:nth-child(18) > div > div {
+      width: 40%;           
+    }
+    body > div:nth-child(18) > div > div:nth-child(1) > div {
+      height: 45%;
+      font-size: 11pt;
+    }
+    /* section18 text2 */
+    body > div:nth-child(18) > div > div:nth-child(2) > div {
+      height: 15%;
+      font-size: 11pt;
+    }
+    body > div:nth-child(18) > div > div:nth-child(2) > div:nth-child(1) {
+      height: 10%;
+      font-size: 14pt;
+    }
+    body > div:nth-child(18) > div > div:nth-child(2) > div:nth-child(2) {
+      height: 15%;
+      font-size: 20pt;
+      font-weight: 600;
+    }
+    body > div:nth-child(18) > div > div:nth-child(2) > div:nth-child(3) {
+      height: 15%;
+      font-size: 14pt;
+    }
+    /*section 19*/
+    body > div:nth-child(19) {
+      height: 40%;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-direction: column;
+      text-align: center;
+    }
+   body > div:nth-child(19) > div:nth-child(1) {
+      height: 40%;
+      width: 50%;
+      font-weight: 600;
+      font-size: 40px;
+    }
+    body > div:nth-child(19) > div:nth-child(2) {
+      height: 30%;
+      width: 50%;
+      color: var(--color-gray-1);
+      font-weight: 500;
+    }
+    /* sction20 */
+    body > div:nth-child(20) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    body > div:nth-child(20) > div:nth-child(1) {
+      height: 45%;
+      width: 50%;
+      background-color: var(--color-gary-2);
+    }
+    /* section20 text1 */
+    body > div:nth-child(20) > div:nth-child(2) {
+      height: 5%;
+      width: 30%;
+      color: var(--color-gray-1);
+    }
+    /* section20 text2 */
+    body > div:nth-child(20) > div:nth-child(3) {
+      display: flex;
+      justify-content: center;
+      height: 40%;
+      width: 40%;
+    }
+    body > div:nth-child(20) > div:nth-child(3) > div > div {
+      height: 15%;
+    }
+    body > div:nth-child(20) > div:nth-child(3) > div > div span {
+      font-size: 30px;
+      font-weight: 600;
+    }
+    body > div:nth-child(20) > div:nth-child(3) > div > div:nth-child(1),
+    body > div:nth-child(20) > div:nth-child(3) > div > div:nth-child(4) {
+      height: 10%;
+    }
+    body > div:nth-child(20) > div:nth-child(3) > div > div:nth-child(3) {
+      height: 20%;
+    }
+    /* section20 text2-1 */
+    body > div:nth-child(20) > div:nth-child(3) > div:nth-child(2) > div {
+      font-size: 11pt;
+    }
+    body > div:nth-child(20) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1){
+      height: 20%;
+    }
+    body > div:nth-child(20) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) {
+      height: 35%;
+      width: 60%;
+    }
+    /* section21 */
+    body > div:nth-child(21) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    body > div:nth-child(21) > div:nth-child(1) {
+      width: 50%;
+      height: 70%;
+      background-color: var(--color-gary-2);
+    }
+    body > div:nth-child(21) > div:nth-child(1) > div {
+      width: 68.21%;
+      height: 23.81%;
+      margin-top: 7.97%;
+      margin-left: 10.57%;
+      font-size: 3rem;
+      font-weight: 600;
+      background-color: transparent;
+    }    
+    body > div:nth-child(21) > div:nth-child(2),
+    body > div:nth-child(21) > div:nth-child(3),
+    body > div:nth-child(21) > div:nth-child(4) {
+      height: 5%;
+      width: 20%;
+      font-size: 1rem;
+    }
+    /* section22 */
+    body > div:nth-child(22) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    body > div:nth-child(22) > div:nth-child(1) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 58.33%;
+      height: 81.54%;
+    }
+    /* section22 text1 */
+    body > div:nth-child(22) > div:nth-child(1) > div:nth-child(1),
+    body > div:nth-child(22) > div:nth-child(1) > div:nth-child(2)  {
+      height: 33.84%;
+    }
+    body > div:nth-child(22) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
+      height: 20%;
+      width: 25%;
+      background-color: var(--color-gary-2);
+    }
+    body > div:nth-child(22) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-top: 5%;
+    }
+    /* section22 text2 */
+    body > div:nth-child(22) > div:nth-child(1) > div:nth-child(2) {
+      display: flex;
+      justify-content: space-between;
+    }
+    body > div:nth-child(22) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+      width: 40%;
+      font-size: 10pt;
+    }
+    body > div:nth-child(22) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+      width: 40%;
+      height: 20%;
+    }
+    body > div:nth-child(22) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2){
+      font-size: 25pt;
+      font-weight: 600;
+    }
+    /* section22 text3 */
+    body > div:nth-child(22) > div:nth-child(1) > div:nth-child(3) {
+      height: 10vh;
+      text-align: center;
+    }
+    /* section23 */
+    body > div:nth-child(23) {
+      height : 50%;
+    }
+    body > div:nth-child(23) > div:nth-child(1) {
+      width: 32.81vw;
+      height: 41.67vh;
+      margin-left: 28.73vw;
+      padding-top: 9.21vh;
+    }
+    body > div:nth-child(23) > div:nth-child(1) > div:nth-child(1){
+      font-size: 2.5rem;
+      font-weight: 600;
+      background-color: transparent;
+    }
+    /* section24 */
+    body > div:nth-child(24) {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+    }
+    body > div:nth-child(24) > div:nth-child(1) {
+      display: flex;
+      justify-content: space-between;
+      width: 42.54vw;
+      height: 73.43vh;
+    }
+    body > div:nth-child(24) > div:nth-child(2) {
+      text-align: center;
+      height: 10vh;
+    }
+    body > div:nth-child(24) > div:nth-child(1) > div {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    body > div:nth-child(24) > div:nth-child(1) > div > div:nth-child(1) {
+      height: 68%;
+      background-color: var(--color-gary-2);
+    }
+    body > div:nth-child(24) > div:nth-child(1) > div > div:nth-child(2) {
+      height : 30%;
+      font-size: 10pt;
+    }
+    /* section25 */
+    body > div:nth-child(25) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    /* section25 text1 */
+    body > div:nth-child(25) > div {
+      width: 65.63vw;
+      height: 71.61vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    body > div:nth-child(25) > div > div:nth-child(1) {
+      width: 18.73vw;
+      height: 7.37vh;
+      font-size: 25pt;
+      font-weight: 600;
+      color: var(--color-gray-1);
+    }
+    /* section25 text2 */
+    body > div:nth-child(25) > div > div:nth-child(2) {
+      height: 87.41%;
+      display: flex;
+      align-items: center;
+    }
+    body > div:nth-child(25) > div > div:nth-child(2) > div {
+      height: 77.51%;
+      width: 28.57%;
+      margin-left: 5.32%;
+    }
+    body > div:nth-child(25) > div > div:nth-child(2) > div > div {
+      height: 16.97%;
+      font-weight: 600;
+      font-size: 18pt;     
+    }
+    body > div:nth-child(25) > div > div:nth-child(2) > div > div:nth-child(1) {
+      height: 66.05%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    body > div:nth-child(25) > div > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(1){
+      height: 9.78%;
+      width: 76.40%;
+      font-size: 15pt;
+    }
+    body > div:nth-child(25) > div > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(2){
+      height: 80%;
+      width: 87.99%;
+      font-size: 9pt;
+      font-weight: 200;
+    }
+    /* section26 */
+    body > div:nth-of-type(26) {
+      height: 73.39vh;
+      display: flex;
+      justify-content: end;
+    }
+    body > div:nth-of-type(26) > div {
+      height: 64.55%;
+      width: 73.25%;
+      margin-right: 1.3%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    /* section26 text */
+    body > div:nth-child(26) > div > div:nth-child(1) {
+      width: 77.86%;
+      height: 9.82%;
+      display: flex;
+      justify-content: space-between;
+    }
+    body > div:nth-child(26) > div > div:nth-child(1) > div:nth-child(1) {
+      width: 56.02%;
+      font-size: 20pt;
+      font-weight: 800;
+      color: var(--color-gray-1);
+    }
+    body > div:nth-child(26) > div > div:nth-child(1) > div:nth-child(2) {
+      font-size: 10pt;
+      width: 15%;
+      margin-top: 1vh;
+      color: blue;
+    }
+    /* section26 content box1 */
+    body > div:nth-child(26) > div > div:nth-child(2) {
+      height: 60.90%;
+      display: flex;
+      justify-content: space-between;
+    }
+    body > div:nth-child(26) > div > div:nth-child(2) > div {
+      width: 23.80%;
+      background-color: var(--color-gary-2);
+      border-radius: 1vw;
+    }
+    /* section26 content box1 text */
+    body > div:nth-child(26) > div > div:nth-child(2) > div > div:nth-child(1) {
+      background-color: transparent;
+      width: 83.48%;
+      height: 65.36%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 8.06%;
+      margin-top: 18.71%;
+    }
+    body > div:nth-child(26) > div > div:nth-child(2) > div > div > div:nth-child(1) {
+      width: 72.24%;
+      height: 30.29%;
+      font-size: 11pt;
+      font-weight: 600;
+      background-color: transparent;
+    }
+    body > div:nth-child(26) > div > div:nth-child(2) > div > div > div:nth-child(2) {
+      height: 46.74%;
+      font-size: 8pt;
+      font-weight: 200;
+      background-color: transparent;
+    }
+    body > div:nth-child(26) > div > div:nth-child(2) > div > div > div:nth-child(3){
+      height: 11.25%;
+      background-color: transparent;
+      display: flex;
+      justify-content: end;
+    }
+    body > div:nth-child(26) > div > div:nth-child(2) > div > div > div:nth-child(3) > div {
+      width: 11.59%;
+      background-color: var(--color-gray-1);
+    }
+    /* section26 content box2 */
+    body > div:nth-child(26) > div > div:nth-child(3) {
+      width : 15%;
+      height: 10%;
+      display: flex;
+      margin-left: 74.79%;
+      justify-content: space-between;
+    }
+    body > div:nth-child(26) > div > div:nth-child(3) > div {
+      width: 40%;
+      text-align: center;
+      background-color: var(--color-gray-1);
+    }
+    /* section27 */
+    body > div:nth-child(27) {
+      display: flex;
+      justify-content: center;
+      height: 80%;
+    }
+    body > div:nth-child(27) > div {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 66%;
+      
+    }    
+    body > div:nth-child(27) > div > div:nth-child(1) {
+      display: flex;
+      justify-content: space-between;
+      height: 7%;
+    }
+    /* section27 text */
+    body > div:nth-child(27) > div > div:nth-child(1) > div:nth-child(1) {
+      width: 42%;
+      color:  var(--color-gray-1);
+      font-size: 30px;
+      font-weight: 800;
+    }
+    body > div:nth-child(27) > div > div:nth-child(1) > div:nth-child(2) {
+      width: 18%;
+      color: blue;
+    }
+    body > div:nth-child(27) > div > div:nth-child(2) {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 90%;
+    }
+    body > div:nth-child(27) > div > div:nth-child(2) > div {
+      height: 77%;
+      width: 18%;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+    }
+    /* section27 image */
+    body > div:nth-child(27) > div > div:nth-child(2) > div > div:nth-child(1) {
+      background-color: var(--color-gary-2);
+    }
+    /* section27 main */
+    body > div:nth-child(27) > div > div:nth-child(2) > div > div:nth-child(2) {
+      height: 25%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      text-align: center;
+    }
+    /* section27 icon */
+    body > div:nth-child(27) > div > div:nth-child(2) > div > div:nth-child(2) > div:nth-of-type(1) {
+      height: 7%;
+      width: 36%;
+      display: flex;
+      justify-content: space-between;
+    }
+    body > div:nth-child(27) > div > div:nth-child(2) > div > div:nth-child(2) > div:nth-of-type(1) > div {
+      width: 15%;
+      background-color: var(--color-gary-2);
+    }
+    /* section27 content */
+    body > div:nth-child(27) > div > div:nth-child(2) > div > div:nth-child(2) > div:nth-of-type(2) {
+      height: 21%;
+      width: 53%;
+      font-size: 10pt;
+    }
+    body > div:nth-child(27) > div > div:nth-child(2) > div > div:nth-child(2) > div:nth-of-type(3) {
+      height: 19%;
+      width: 63%;
+      font-size: 8pt;
+    }
+    body > div:nth-child(27) > div > div:nth-child(2) > div > div:nth-child(2) > div:nth-of-type(4) {
+      height: 26%;
+      font-size: 6pt;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    body > div:nth-child(27) > div > div:nth-child(2) > div > div:nth-child(2) > div:nth-of-type(4) > div:nth-child(1) {
+      width: 63%;
+    }
+    body > div:nth-child(27) > div > div:nth-child(2) > div > div:nth-child(2) > div:nth-of-type(4) > div:nth-child(2) {
+      width: 30%;
+      height: 45%;
+      color: blue;
+    }
+    /* section28 */
+    body > div:nth-child(28) {
+      height: 67%;
+      display: flex;
+      justify-content: center;
+    }
+    body > div:nth-child(28) > div {
+      width: 66%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    /* section28 main box */
+    body > div:nth-child(28) > div > div:nth-child(1) {
+      height: 81%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    body > div:nth-child(28) > div > div:nth-child(1) > div {
+      width: 24%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: space-evenly;
+      font-size: 15pt;
+    }
+    /* section28 text1 */
+    body > div:nth-child(28) > div > div:nth-child(1) > div > div:nth-child(1) {
+      height: 21%;
+      width: 72%;
+      font-weight: 800;
+    }
+    body > div:nth-child(28) > div > div:nth-child(1) > div > div:nth-child(2) {
+      height: 24%;
+      width: 84%;
+    }
+    /* section28 text2 */
+    body > div:nth-child(28) > div > div:nth-child(1) > div > div:nth-child(2) > div:nth-child(1) {
+      height: 41%;
+      font-weight: 800;
+    }
+    body > div:nth-child(28) > div > div:nth-child(1) > div > div:nth-child(2) > div:nth-child(2) {
+      height: 52%;
+      width: 97%;
+      font-size: 8pt;
+    }
+    /* section28 text3 */
+    body > div:nth-child(28) > div > div:nth-child(1) > div > div:nth-child(3) {
+      height: 9%;
+      width: 91%;
+      font-size: 14.6pt;
+      font-weight: 800;
+    }
+    /* section28 box */
+    body > div:nth-child(28) > div > div:nth-child(2) {
+      height: 8%;
+      width: 23%;
+      text-align: center;
+      background-color: var(--color-gary-2);
+      border-radius: 5vw;
+      font-size: 10pt;
+    }
+    /* section29 */
+    body > div:nth-child(29) {
+      height: 67%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    body > div:nth-child(29) > div {
+      width: 66%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    /* section29 text */
+    body > div:nth-child(29) > div > div:nth-child(1) {
+      width: 12%;
+      height: 8%;
+      font-size: 25px;
+      color: var(--color-gray-1);
+      font-weight: 800;
+    }
+    /* section29 content text box */
+    body > div:nth-child(29) > div > div:nth-child(2) {
+      height: 55%;
+      display: flex;
+    }
+    /* section29 content text1 */
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(1) {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+      width: 32%;
+      height: 4%;
+      font-size: 8pt;
+      color: var(--color-gray-1);
+    }
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+      width: 89%;
+      height: 8%;
+      font-size: 16pt;
+      font-weight: 600;
+    }
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) {
+      width: 65%;
+      height: 8%;
+      font-weight: 600;
+      font-size: 16pt;
+    }
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) {
+      width: 47%;
+      height: 8%;
+      font-weight: 600;
+      font-size: 16pt;
+    }
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(5) {
+      width: 47%;
+      height: 8%;
+      font-weight: 600;
+      font-size: 16pt;
+    }
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(6) {
+      width: 47%;
+      height: 8%;
+      font-weight: 600;
+      font-size: 16pt;
+    }
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(7) {
+      width: 48%;
+      height: 13%;
+      font-weight: 600;
+      font-size: 16pt;
+    }
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(8) {
+      width: 50%;
+      height: 5%;
+      font-weight: 600;
+      font-size: 10pt;
+    }
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(9) {
+      width: 90%;
+      height: 5%;
+      font-weight: 600;
+      font-size: 10pt;
+    }
+    /* section29 content text2 */
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(2) {
+      width: 20%;
+    }
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(2) > div {
+      height: 41%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(1) {
+      width: 77%;
+      height: 13%;
+      font-size: 8pt;
+      color: var(--color-gray-1);
+    }
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) {
+      width: 81%;
+      height: 12%;
+      font-weight: 600;
+      font-size: 10pt;
+    }
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) {
+      width: 81%;
+      height: 12%;
+      font-weight: 600;
+      font-size: 10pt;
+    }
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(4) {
+      width: 81%;
+      height: 12%;
+      font-weight: 600;
+      font-size: 10pt;
+    }
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(5) {
+      width: 40%;
+      height: 13%;
+      font-weight: 600;
+      font-size: 10pt;
+    }
+    /* section29 content text3 */
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(3) {
+      width: 34%;
+    }
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(3) > div {
+      height: 75%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(3) > div > div:nth-child(1) {
+      height: 7%;
+      width: 41%;
+      font-size: 8pt;
+      color: var(--color-gray-1);
+    }
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(3) > div > div:nth-child(2) {
+      height: 7%;
+      width: 35%;
+      font-weight: 600;
+      font-size: 10pt;
+    }
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(3) > div > div:nth-child(3) {
+      height: 7%;
+      width: 82%;
+      font-weight: 600;
+      font-size: 10pt;
+    }
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(3) > div > div:nth-child(4) {
+      height: 7%;
+      width: 21%;
+      font-weight: 600;
+      font-size: 10pt;
+    }
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(3) > div > div:nth-child(5) {
+      height: 7%;
+      width: 44%;
+      font-weight: 600;
+      font-size: 10pt;
+    }
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(3) > div > div:nth-child(6) {
+      height: 7%;
+      width: 64%;
+      font-weight: 600;
+      font-size: 10pt;
+    }
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(3) > div > div:nth-child(7) {
+      height: 7%;
+      width: 26%;
+      font-weight: 600;
+      font-size: 10pt;
+    }
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(3) > div > div:nth-child(8) {
+      height: 7%;
+      width: 68%;
+      font-weight: 600;
+      font-size: 10pt;
+    }
+    body > div:nth-child(29) > div > div:nth-child(2) > div:nth-child(3) > div > div:nth-child(9) {
+      height: 7%;
+      width: 11%;
+      font-weight: 600;
+      font-size: 10pt;
+    }
+  </style>
+</head>
+<body>
+  <div> <!--section1-->
+    <div> 
+      <div> <!--section1 bar1-->
+        <div>
+          <div> </div> <!--text box-->
+          <div> </div> <!--search box-->
+        </div>
+      </div>
+      <div> <!--section1 bar2-->
+        <div> <!--category -->
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div> <!--section1 bar3--> 
+        <div> </div> <!--banner-->
+      </div>
+      <div> <!--section1 content1-->
+        <div> 
+          <div>iphone 15pro</div>
+          <div>티타늄</div>
+          <div>image</div>
+          <div>구입하기</div>
+          <div>1,550,000부터</div>
+        </div>
+      </div>
+    </div>   
+  </div>
+
+  <div> <!--section2-->
+    <div> <!--section2 content1-->
+      <div>
+        <div>일단 핵심부터.</div>
+        <div>동영상 보기 > 이벤트 시청하기 ></div>
+      </div>
+    </div>
+    <div> <!--section2 content2-->
+      <div>
+        <div>
+         <p>A17 Pro 등장.<br>
+            게임의 판도를 바꾸는 칩.<br>
+            획기적인 성능.
+          </p>
+          <div> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div> <!--section3-->
+    <div> 
+      <div>보다 자세히 들여다보기.</div>
+    </div>
+    <div>
+      <div>image</div>
+      <div>네 가지 색상의 15.5cm iPhone 15 Pro1</div>
+      <div>color</div>
+    </div>
+  </div>
+
+  <div> <!--section4-->
+    <div>본격적으로 탐구해 보기.</div>
+  </div> 
+  
+  <div> <!--section5-->
+    <div> </div>
+    <div> <!--section5 img-->
+      <div>image</div>
+      <div>
+        <div>image</div>
+        <div>image</div>
+      </div>
+    </div>
+    <div> <!--section5 text-->
+      <div>
+        <div>
+          <div> iPhone 사상 최초로 항공우주 등급의
+            티타늄 디자인을 채택한 iPhone 15 Pro.
+            화성 탐사선에 쓰이는 소재와 동일한
+            합금을 사용했습니다.</div>
+          <div>금속 중 비강도가 가장 탁월한 것으로
+            손꼽히는 티타늄을 사용한 덕분에
+            iPhone 15 Pro는 역대 Pro 모델 중 가장 가볍습니다. 기기를 집어드는 순간, 가벼워진 무게감이 확연히 느껴지죠.</div>
+        </div>
+        <div>디자인 및 디스플레이에 대해 더 알아보기</div>
+      </div>
+    </div>
+  </div>
+
+  <div> <!--section6-->
+    <div>A17 Pro 칩 속속들이 살펴보기</div>
+    <div>image</div>
+  </div>
+
+  <div> <!--section7-->
+    <div>A17 Pro 칩.<br>
+      게임 평정, 괴물 프로세서.</div>
+    <div>마침내 Apple GPU 사상 가장 큰 변화가 찾아왔습니다.</div>
+    <div>image</div>
+    <div>붕괴: 스타레일</div>
+    <div> <!--section7 text-->
+      <div> 
+        <div>역대 최고의 그래픽 성능을 갖춘
+          A17nPro는 다른 어떤 iPhone 칩과도
+          비교할 수 없는 독보적인 칩입니다.</div>
+        <div>엄청나게 디테일한 배경과 살아 숨쉬는
+          듯한 캐릭터로 모바일 게임을 즐길 때도
+          생생한 그래픽과 몰입감 넘치는 플레이
+          경험을 만끽할 수 있게 해주죠. 여기에 업계
+          최고 수준의 속도와 효율성까지 갖춘
+          A17 Pro. 무슨 일이든 쏜살같은 속도로
+          해치웁니다.</div>
+      </div>
+      <div>
+        <div>새로운</div>
+        <div>Pro급 GPU</div>
+        <div>6코어 탑재</div>
+      </div>
+    </div>
+  </div>
+
+  <div> <!--section8-->
+    <div>카메라 성능 줌인해 보기 +</div>
+    <div>상상 이상의 디테일까지<br>
+      포착해 주는 카메라.</div>
+    <div>비약적으로 유연해진 프레임 옵션부터 한 차원 높은 수준의 인물 사진까지, iPhone 사상 가장
+      강력한 카메라 시스템이 만들어내는 놀라운 이미지를 소개합니다.</div>
+    <div>
+      <div>image</div>
+      <div>48MP 메인 카메라로 촬영한 초록색 이구아나</div>
+    </div>
+  </div>
+
+  <div> <!--section9-->
+    <div>iPhone 15 Pro는 다양한 초점 거리를<br>
+      지원합니다. 7개의 프로급 렌즈를<br>
+      주머니에 쏙 넣어 어디든 갖고 다닐 수 있게<br>
+      된 거나 다름없죠.
+    </div>
+    <div> <!--section9 img-->
+      <div>image</div>
+      <div>image</div>
+    </div>
+    <div>
+      <div> <!--section9 text-->
+        <div>0.5x 울트라 와이드 | 접사</div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+
+  <div> <!--section10-->
+    <div>
+      <div>image</div>
+      <div>
+        <div>그 어느 때보다 앞선 성능을 자랑하는
+          48MP 메인 카메라. 덕분에 새로운 차원의
+          디테일 및 색상 표현력이 돋보이는
+          초고해상도 사진을 촬영할 수 있죠.</div>
+        <div>향상된 성능은 인물 사진을 찍을 때 빛을
+          발합니다. 더 이상 인물 사진 모드로 일일이
+          전환할 필요 없이, 피사체가 사람 혹은
+          강아지, 고양이 같은 반려동물인 경우
+          iPhone이 자동으로 심도 정보를
+          포착합니다. 그래서 촬영 중에 인물
+          사진처럼 흐림 효과가 아름답게 배경에
+          적용된 상태를 확인하면서 찍을 수 있고,
+          촬영 후에 ‘사진’ 앱에서 인물 사진으로
+          바꾸는 것도 가능하죠.</div>
+      </div>
+    </div>
+  </div>
+
+  <div> <!--section11-->
+    <div>마법 같은 공간 동영상을 촬영하고 그 순간을<br>
+      Apple Vision Pro에서 생생하게 다시 경험하세요.</div>
+  </div>
+
+  <div> <!--section12-->
+    <div>5배 망원 파고들기 +</div>
+  </div>
+
+  <div> <!--section13-->
+    <div>초점 거리 120mm의<br>
+      완벽한 프로급 줌.</div>
+    <div>
+      <div>image</div>
+      <div>재생 > </div>
+    </div>
+    <div>
+      <div> 
+        <div>iPhone 15 Pro Max의 콤팩트한 프로급
+          카메라 시스템에는 그 어떤 iPhone
+          모델보다 높은 배율의 광학 줌을 지원하는
+          5배 망원 카메라가 탑재되어 있습니다.</div>
+        <div>덕분에 이제 훨씬 먼 거리에서도 더 선명한
+          클로즈업 사진을 찍을 수 있죠. 수려한
+          경관을 배경으로 서있는 친구의 모습이나
+          축구 경기에서 골을 넣은 아이의 모습을
+          또렷하게 담아보세요.</div>
+      </div>
+      <div>
+        <div>5배 광학 줌</div>
+        <div>120mm 렌즈</div>
+      </div>
+    </div>
+  </div>
+
+  <div> <!--section14-->
+    <div>즐겨 쓰는 기능,<br>
+      동작 버튼으로<br>
+      바로.</div>
+  </div>
+
+  <div> <!--section15-->
+    <div>
+      <div>
+        <div>새로운 동작 버튼은 즐겨 쓰는 기능을
+          빠르게 실행시켜 주는 단축키라고 할 수
+          있습니다. 원하는 기능으로 설정해 두면,
+          동작 버튼을 길게 누르는 것만으로 해당
+          동작이 실행되죠.</div>
+        <div>
+          <div>icon</div>
+          <div>icon</div>
+          <div>icon</div>
+          <div>icon</div>
+          <div>icon</div>
+          <div>icon</div>
+          <div>icon</div>
+          <div>icon</div>
+          <div>icon</div>
+        </div>
+      </div>
+      <div>image</div>
+    </div>
+    <div>
+      <div>초기 상태의 동작 버튼은 벨소리 모드와
+        무음 모드를 오가는 기능을 하도록
+        설정되어 있습니다. 동작 버튼에 다른
+        동작을 할당한 경우에는 제어 센터를
+        이용해 기기를 음소거하거나 집중 모드
+        필터를 이용해 자동으로 무음 모드로
+        전환되도록 할 수 있죠.</div>
+        <div>다른 일을 하던 도중에도 동작 버튼으로
+          언제든 설정해둔 기능을 바로 쓸수
+          있습니다. 원할 때 바로 카메라를 켜 셀피를
+          찍을 수도 있고, 필요할 때 바로 음성 메모를
+          켜 녹음을 할 수도 있죠. 단축어 실행을 통해
+          특정 앱을 실행하거나 거실 조명 켜기, 음악
+          재생 등과 같은 일련의 작업들을 버튼
+          한 번으로 수행하도록 할 수도 있답니다.</div>
+    </div>
+  </div>
+
+  <div> <!--section16-->
+    <div>연결성 살펴보기 +</div>
+  </div>
+
+  <div> <!--section17-->
+    <div>
+      <div>기가 막히게 빠른<br>
+        기가급 전송.</div>
+      </div>
+    <div>
+      <div>image</div>
+    </div>
+  </div>
+
+  <div> <!--section18-->
+    <div>
+      <div>
+        <div>
+          iPhone 사상 최초로 USB 3를 지원하는
+          iPhone 15 Pro.4 비약적으로 빨라진
+          속도로 데이터를 전송하고 그 어느 때보다
+          빠르게 프로급 워크플로를 처리할 수 있게
+          해주죠.
+        </div>
+        <div>
+          새롭게 탑재된 USB C 커넥터 덕분에
+          iPhone  15 Pro를 충전할 때 쓰는
+          케이블로 Mac 또는 iPad도 충전할 수
+          있게 되었습니다. 여러 종류의 케이블을
+          써야 했던 번거로움, 이제 안녕입니다.
+        </div>
+      </div>
+      <div>
+        <div>최대</div>
+        <div>20배 더 빠른</div>
+        <div>파일 전송</div>
+        <div>새로운 Wi-Fi 6E5는 최대 2배 더 빠른
+          무선 속도를 선사합니다. 덕분에 눈 깜박할
+          새에 파일을 업로드하고 다운로드할 수
+          있죠.</div>
+      </div>
+    </div>
+  </div>
+
+  <div> <!--section19-->
+    <div>
+      진정 프로다운<br>
+        배터리 성능.
+    </div>
+    <div>iPhone 15 Pro는 이렇게 많은 첨단 신기능들을 구동하면서도 여전히<br>
+      온종일 가는 놀라운 배터리 성능을 갖추고 있습니다.
+    </div>
+  </div>
+
+  <div> <!--scetion20-->
+    <div>image</div>
+    <div>Apple TV 앱에서 ‘파운데이션’ - Foundation 시청하기 > </div>
+    <div>
+      <div>
+        <div>최대</div>
+        <div><span>29시간</span></div>
+        <div>동영상 재생이 가능한<br>
+          iPhone 15 Pro Max10</div>
+        <div>최대</div>
+        <div><span>23시간</span></div>
+        <div>동영상 재생이 가능한<br>
+          iPhone 15 Pro10</div>
+      </div>
+      <div>
+        <div>
+          별도의 MagSafe 충전기로 빠르고<br>
+          효율적인 무선 충전 가능11
+        </div>
+        <div>
+          <div>iPhone 12 Pro Max보다
+            최대 9시간 더 긴
+            iPhone 15 Pro Max의
+            동영상 재생 시간</div>
+          <div>
+            iPhone 12 Pro보다
+            최대 6시간 더 긴
+            iPhone 15 Pro의
+            동영상 재생 시간
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div> <!--section21-->
+    <div>
+      <div>응급 상황에도<br>
+        든든한 도움이 되는 iPhone.</div>
+    </div>
+    <div>iPhone은 생명을 구하는 핵심 안전 기능인<br>
+      충돌 감지12 기능을 갖추고 있습니다.</div>
+    <div>자세한 방법 모두 알아보기 + </div>
+    <div></div>
+  </div>
+  
+  <div> <!--section22-->
+    <div> 
+      <div>
+        <div>icon</div>
+        <div>더 나은<br>
+          세상을 위한 설계.</div>
+      </div>
+      <div>
+        <div>당신이 소중하게 여기는 가치들은 Apple에게도
+          마찬가지로 소중합니다. 개인정보를 보다 주체적으로
+          관리할 수 있게 해주는 개인정보 보호 기능부터 재활용 소재
+          사용 비율을 높여 환경에 미치는 영향을 최소화한 디자인,
+          누구든 자신에게 잘 맞는 방식으로 iPhone을 이용할 수
+          있게 해 주는 ‘손쉬운 사용’ 기능들까지, 우리 제품에
+          그 원칙이 구석구석 반영되어 있습니다.</div>
+        <div>
+          <div>iPhone 15 Pro의 내부 구조 프레임<br>
+            소재는</div>
+          <div>
+            100% 재활용<br>
+            알루미늄
+          </div>
+        </div>
+      </div>
+      <div>iPhone이 지지하는 가치 + </div>
+    </div>
+  </div>
+
+  <div> <!--section23-->
+    <div>
+      <div>iOS 17.<br>
+        취향을 듬뿍. 연락처를 뚝딱.<br>
+        스티커를 착착.</div>
+    </div>
+  </div>
+  
+  <div> <!--section24-->
+    <div>
+      <div>
+        <div>image</div>
+        <div>연락처 포스터. 당신이 전화를
+          걸었을 때 상대방의 화면에 뜨는
+          ‘연락처 포스터’를 직접 만들 수
+          있습니다. 좋아하는 사진이나
+          미모티콘을 고르고 맘에 드는
+          서체로 꾸며주면 명함처럼
+          활용할 수 있는 당신만의 포스터가
+          완성되죠.</div>
+      </div>
+      <div>
+        <div>image</div>
+        <div>NameDrop. 다른 사람과 연락처
+          정보를 교환하고 싶을 땐? 당신의
+          iPhone과 상대방의 iPhone을
+          서로 가까이 대기만 하면 끝. 각자
+          공유할 내용을 선택하고 나면
+          연락처 정보가 바로 전송됩니다.</div>
+      </div>
+      <div>
+        <div>image</div>
+        <div>라이브 스티커. 사진에서 원하는
+          대상을 꾹 눌러 배경으로부터
+          분리한 다음 스티커로 만들 수
+          있습니다. ‘젤리’와 ‘광택’ 등 여러
+          효과를 더하고, Live Photo를
+          이용해 움직이는 스티커를 만들
+          수도 있죠.</div>
+      </div>
+    </div>
+    <div>iOS 17에 대해 더 알아보기 + </div>
+  </div>
+
+  <div> <!--sction25-->
+    <div>
+      <div>절친 목록.</div>
+      <div>
+        <div>
+          <div>
+            <div>iPhone과 Apple Watch</div>
+            <div>iPhone이 어딨는지 모르겠다면? 최신
+              Apple Watch 모델들을 활용하면 iPhone이 어느
+              방향에 있는지, 얼마나 떨어져 있는지를 대략적으로
+              확인할 수 있습니다.17 iPhone으로 단체 사진을
+              촬영할 때도 같이 찍을 사람들과 함께 서서
+              Apple Watch를 뷰파인더로 사용할 수도 있죠.
+              그리고 Apple Watch에서 전화를 받은 후에
+              iPhone에서 통화를 이어가고 싶다면, iPhone을
+              탭하기만 하면 매끄럽게 전환됩니다.</div>
+          </div>
+          <div>iPhone과 Mac</div>
+          <div>iPhone과 AirPods</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div> <!--section26-->
+    <div>
+      <div>
+        <div>Apple에서 보다 부담 없이 쇼핑하는 법.</div>
+        <div>iPhone 쇼핑하기 > </div>
+      </div>
+
+      <div> <!--section26 content box1-->
+        <div>
+          <div>
+            <div>Apple Trade In으로<br>
+              보다 저렴하게.</div>
+            <div>iPhone 11 이상의 모델을 보상 판매하고
+              iPhone 15 또는 iPhone 15 Pro 구입 시
+              사용할 수 있는 ₩220,00-₩990,000 상당의
+              크레딧을 받으세요.*</div>
+            <div>
+              <div> + </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div>월 할부 가능.</div>
+            <div>편리한 월 할부 옵션으로 보다 부담 없이 구매하실 수
+              있습니다.</div>
+            <div>
+              <div> + </div>
+            </div>
+        </div>
+        </div>
+        <div>
+          <div>
+            <div>무료 배송 및 픽업.</div>
+            <div>무료로 배송받거나 Apple Store에서 픽업할 수
+              있습니다.</div>
+            <div>
+              <div> + </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div>스페셜리스트와 함께 하는<br>
+              일대일 쇼핑.</div>
+            <div>세션에서 안내되는 내용을 바탕으로 당신에게
+              꼭 맞는 iPhone을 선택해 보세요.</div>
+            <div>
+              <div> + </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div>←</div>
+        <div>→</div>
+      </div>
+    </div>
+  </div>
+
+  <div> <!--section27-->
+    <div>
+      <div>
+        <div>다른 iPhone 모델도 살펴보기.</div>
+        <div>iPhone 모두 살펴보기 > </div>
+      </div>
+
+      <div> <!--section27 main1-->
+        <div> <!--section27 main1-1-->
+          <div>image</div> <!--section27 image-->
+          <div>
+            <div> <!--section27 icon-->
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div>iPhone 15 Pro</div>
+            <div>₩1,550,000부터</div>
+            <div>
+              <div>현재 보고 있는 모델</div>
+              <div>구입하기 > </div>
+            </div>
+          </div>
+        </div>
+
+        <div> <!--section27 main1-2-->
+          <div>image</div> <!--section27 image1-->
+          <div>
+            <div> <!--section27 icon-->
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div>iPhone 15</div>
+            <div>₩1,250,000부터</div>
+            <div>
+              <div>더 알아보기</div>
+              <div>구입하기 > </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div> <!--section28-->
+    <div>
+      <div>
+        <div>
+          <div>A17 Pro 칩<br>
+            6코어 GPU 탑재</div>
+          <div>
+            <div>프로급 카메라 시스템</div>
+            <div>Apple 사상 가장 앞선 48MP 메인 카메라<br>
+              3배 또는 5배 망원 카메라<br>
+              울트라 와이드 카메라</div>
+        </div>
+        <div>최대 29시간 동영상 재생18</div>
+        </div>
+
+        <div>
+          <div>A16 Bionic 칩<br>
+            5코어 GPU 탑재</div>
+          <div>
+            <div>첨단 듀얼 카메라 시스템</div>
+            <div>48MP 메인 카메라<br>
+              2배 망원 지원<br>
+              울트라 와이드 카메라</div>
+        </div>
+        <div>최대 26시간 동영상 재생18</div>
+        </div>
+      </div>
+
+      <div>
+          모든 iPhone 모델 비교하기 >
+      </div>
+    </div>  
+  </div>
+
+  <div> <!--section29-->
+    <div>
+      <div>iPhone</div>
+
+      <div>
+        <div> <!--section29 content text1-->
+          <div>iPhone 살펴보기</div>
+          <div>iPhone 모두 살펴보기</div>
+          <div>iPhone 15Pro</div>
+          <div>iPhone 15</div>
+          <div>iPhone 14</div>
+          <div>iPhone 13</div>
+          <div>iPhone SE</div>
+          <div>iPhone 비교하기</div>
+          <div>iPhone으로 갈아타기</div>
+        </div>
+        <div> <!--section29 content text2-->
+          <div>
+            <div>iPhone 쇼핑하기</div>
+            <div>iPhone 쇼핑하기</div>
+            <div>iPhone 액세서리</div>
+            <div>Apple Trade In</div>
+            <div>할부 방식</div>
+          </div>
+        </div>
+        <div> <!--section29 content text3-->
+          <div>
+            <div>관련 항목 살펴보기</div>
+            <div>iPhone 지원</div>
+            <div>iPhone을 위한 AppleCare+</div>
+            <div>iOS 17</div>
+            <div>Apple이 만든 앱</div>
+            <div>iPhone의 개인정보 보호</div>
+            <div>iCloud+</div>
+            <div>Apple 지갑, Apple Pay</div>
+            <div>Siri</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+</html>

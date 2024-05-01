@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid</title>
+  <style>
+    * {
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+  body > div:nth-child(1) {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 80px 200px 80px 200px;
+  }
+  /* body > div:nth-child(1) > div:nth-child(1) {
+    grid-column: 1 / span 3;
+    text-align: center;
+    background-color: blue;
+  } */
+
+  .item1 {
+    grid-column: 1 / span 3;
+    background-color: blueviolet;
+    text-align: center;
+  }
+
+  .item2 {
+    grid-row: 2 / span 3;
+    background-color: brown;
+  }
+
+  </style>
+</head>
+<body>
+  <div>
+    <div class="item1">One</div>
+    <div class="item2">Two</div>
+    <div>Three</div>
+    <div>Four</div>
+    <div>Five</div>
+  </div>
+  
+</body>
+</html>
