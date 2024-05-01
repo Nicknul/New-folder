@@ -64,6 +64,7 @@
     nav.style.zIndex = styles.zIndex[0];
     nav.style.width = styles.width[1];
     nav.style.height = styles.height[0];
+    nav.style.display = "block"
     // div style
     div.style.backgroundColor = styles.backgroundColor[2];
     div.style.position = styles.position[0];
@@ -72,16 +73,19 @@
     div.style.height = styles.height[1];
     div.style.margin = styles.margin[2];
 
-    function none() {
-      nav.style.display = "none"
-    }    
-    div.addEventListener("click", none);
+    function none() {nav.style.display = "none"}
+    function block() {nav.style.display = "block"}
+
+    div.addEventListener("click", function () {
+      if (nav.style.display === "block") {
+        none()
+      } else {
+        block()
+      }
+    })
 
 
-    const divButton = document.querySelector('#root > nav > div');
-      console.log(divButton);
-
-
+    
   </script>
   
 </body>
