@@ -1,0 +1,63 @@
+10:37
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <div id="button"></div>
+  <script>
+
+    document.body.style.padding = 0;
+    document.body.style.margin = 0;
+
+    const root = document.getElementById('root');
+    const button = document.getElementById('button');
+    const on = document.createElement('on');
+    const off = document.createElement('off');
+    
+    
+    root.appendChild(on)
+    root.appendChild(off)
+    
+    root.style.position = "absolute"
+
+
+    button.style.position = "absolute"
+    button.style.width = "80px"
+    button.style.height = "80px"
+    button.style.backgroundColor = "grey"
+    
+    on.style.display = "block"
+    on.style.position = "absolute"
+    on.style.backgroundColor = "beige"
+    on.style.width = "100vw"
+    on.style.height = "100vh"
+    
+    off.style.display = "none"
+    off.style.position = "absolute"
+    off.style.backgroundColor = "black"
+    off.style.width = "100vw"
+    off.style.height = "100vh"
+
+    
+    // button를 클릭하면 어둡게 해줘
+    // butoon을 한번 더 클릭하면 밝게 해줘 
+  
+    function buttonControl() {
+       if (on.style.display === "block") {
+        on.style.display = "none"
+        off.style.display = "block"
+       } else {
+        on.style.display = "block"
+        off.style.display = "none"
+       }
+    }
+
+    button.addEventListener('click', buttonControl);
+  </script>
+</body>
+</html>

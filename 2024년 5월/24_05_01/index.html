@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script>
+    let styles = {
+      backgroundColor : [
+        "#D9D9D9",
+        "darkGray",
+        "gray",
+      ],
+      width : [
+        "100vw",
+        "50vw",
+        "100px",
+      ],
+      height : [
+        "100vh",
+        "100px",
+      ],
+      margin : [
+        0,
+        "1vw",
+        "50px",
+      ],
+      padding : [
+        0,
+      ],
+      position : [
+        "absolute",
+      ],
+      zIndex : [
+        1,
+      ],
+
+    }
+    // 변수 body 선언 및 style
+    const body = document.body;
+    body.style.margin = styles.margin[0];
+    body.style.padding = styles.padding[0];
+    // 변수 root 선언 및 style
+    const root = document.getElementById('root');
+    root.textContent = "연회색";
+    root.style.backgroundColor = styles.backgroundColor[0];
+    root.style.width = styles.width[0];
+    root.style.height = styles.height[0];    
+    // nav, div 생성
+    const nav = document.createElement('nav');
+    nav.textContent = "회색";
+    const div = document.createElement('div');
+    div.textContent = "진회색";
+    // root의 자식으로 추가
+    root.appendChild(nav);
+    root.appendChild(div);
+    // nav style
+    nav.style.backgroundColor = styles.backgroundColor[1];
+    nav.style.position = styles.position[0];
+    nav.style.zIndex = styles.zIndex[0];
+    nav.style.width = styles.width[1];
+    nav.style.height = styles.height[0];
+    nav.style.display = "block"
+    // div style
+    div.style.backgroundColor = styles.backgroundColor[2];
+    div.style.position = styles.position[0];
+    div.style.zIndex = styles.zIndex[0];
+    div.style.width = styles.width[2];
+    div.style.height = styles.height[1];
+    div.style.margin = styles.margin[2];
+
+    function none() {nav.style.display = "none"}
+    function block() {nav.style.display = "block"}
+
+    div.addEventListener("click", function () {
+      if (nav.style.display === "block") {
+        none()
+      } else {
+        block()
+      }
+    })
+
+
+    
+  </script>
+  
+</body>
+</html>

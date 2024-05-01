@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      document.body.style.padding = 0;
+      document.body.style.margin = 0;
+
+      // root
+      const root = document.getElementById('root');
+      root.textContent = "연회색";
+      // nav
+      const nav = document.createElement('nav');
+      nav.textContent = "회색";
+      // root의 자식으로 붙임
+      root.appendChild(nav);
+      // div
+      const div = document.createElement('div');
+      div.textContent = "진회색";
+      // nav의 자식으로 붙임
+      nav.appendChild(div);
+
+      root.style.width = "100vw";
+      root.style.height = "100vh";
+      root.style.backgroundColor = "#d9d9d9";
+
+      root.children[0].style.width = "50vw";
+      root.children[0].style.height = "100vh";
+      root.children[0].style.backgroundColor = "#b0b0b0";
+      root.children[0].style.position = "absolute";
+      root.children[0].style.zIndex = 1;
+
+      root.children[0].children[0].style.width = "100px";
+      root.children[0].children[0].style.height = "100px";
+      root.children[0].children[0].style.backgroundColor = "#808080";
+      root.children[0].children[0].style.margin = "50px";
+
+      function clickElement(clickTriggerElement, targetElement, someText) {
+        function someEvent(targetElement, someText) {
+          targetElement.textContent = someText;
+        }
+        clickTriggerElement.addEventListener("click",someEvent(targetElement, someText));
+      };
+
+      const elements = {
+        triggerElement : {
+          div : div,
+        },
+        targetElement : {},
+        someText : "",
+      }
+      
+      clickElement(elements.triggerElement.div, elements.targetElement, elements.someText);
+
+      // --- styling
+      
+
+      // const divButton = document.querySelector('#root > nav > div');
+      // console.log(divButton);
+      const navArea = root.children[0];
+      const divButton = root.children[0].children[0];
+      
+      function appearFunc() {
+        navArea.style.display = 'none';
+      }
+      divButton.addEventListener('click', appearFunc);
+      
+      // 해당 코드까지의 역할
+      // 버튼에 해당하는 (진회색) 요소를 클릭하면 (회색) 요소가 사라짐
+      // 하지만 종속관계 때문에 진회색 요소도 같이 사라짐
+      // 이것을 해결할 방법은 '구조(html)'에 대한 이해에 있음
+
+
+    </script>
+  </body>
+</html>
