@@ -30,13 +30,14 @@
     root.children[0].children[0].style.backgroundColor = "white";
     // }
 
-    for (let pos = 0; pos < 20; pos++) {
+    let hy = 1;
+
+
       setInterval (function() {
       root.children[0].children[0].style.position = "relative"
-      root.children[0].children[0].style.left = "300px"
-    },2000)
-      
-    }
+      root.children[0].children[0].style.left = 300 + hy;
+      hy++
+      ,1000}) // 비동기 함수 -> 순서를 어김 -> 수동으로 핸들링하고 싶을 때, 비동기를 배우자. 프라미스 (함수)
 
     // setInterval (function() {
     //   root.children[0].children[0].style.position = "relative"

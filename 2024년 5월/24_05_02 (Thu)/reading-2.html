@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>reading-2</title>
+</head>
+<body>
+  <script>
+
+    function addItem(array, item, index) {
+      let newArray = [];
+      
+      function inner(currentIndex) {
+        return currentIndex > index
+      }
+            
+      for (let i =0; i <= array.length; i++) {
+        // 조건문
+        if (i === index) {
+          newArray[i] = item;
+        } else if (inner(i) === true) {
+          newArray[i] = array[i - 1];
+        } 
+        else {
+          newArray[i] = array[i];
+        }
+      //  console.log(newArray[i])
+      }
+      return newArray;
+    }
+
+
+    let planets = ["키위", "사과", "바나나"];
+    // 배열 하나 만들어주자
+    let updatedPlanets = addItem(planets, "나는 과일을 좋아하진 않아.", 0);
+    // 함수를 호출하는데, 얘를 변수에 담네? 그럼 이건 값인가?
+
+    for(let i = 0; i <updatedPlanets.length; i++) {
+      // 문자열이거나 배열일 확륜이 높음 
+    }
+    console.log(updatedPlanets);
+  </script>
+</body>
+</html>
