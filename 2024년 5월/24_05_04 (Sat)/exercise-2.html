@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exercise-2</title>
+</head>
+<body>
+  <div id="root"></div>
+  <input type="text" placeholder="할 일을 입력하세요">
+  <select name="name" id="order-select"></select>
+  
+  <script>
+    let orderSelect = document.getElementById('order-select');
+    let todoItems = [];
+
+    function updateSelectOptions()  {
+      let length = todoItems.length;
+      orderSelect.innerHTML = '';
+      for (let i = 0; i < length; i++) {
+        let option = document.createElement('option');
+        option.value = i;
+        option.text = `항목 ${i + 1}`;
+        orderSelect.appendChild(option);
+      }
+      let lastOption = document.createElement('option');
+      lastOption.value = "마지막";
+      lastOption.text = "마지막";
+      orderSelect.appendChild(lastOption);
+    }
+    
+
+
+
+
+  </script>
+  
+</body>
+</html>
