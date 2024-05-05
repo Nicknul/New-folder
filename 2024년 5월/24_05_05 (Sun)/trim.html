@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>trim</title>
+</head>
+<body>
+  <div id="root"></div>
+  <input type="text" id = "input">
+  <button id = button>Enter</button>
+
+  <script>
+    let root = document.getElementById('root');
+    let input = document.getElementById('input');
+    let button = document.getElementById('button');
+    let array = [];
+
+    console.log(test);
+    console.log(test.trim());
+
+    function newP() {
+      for (let i = 0; i < array.length; i++) {
+        let p = document.createElement('p');
+        p.innerHTML = i;
+        root.appendChild(p);
+      }
+    }
+
+    button.addEventListener("click", newP);
+
+  </script>
+  
+</body>
+</html>
