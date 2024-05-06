@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test</title>
+</head>
+<body>
+  <div id="root"></div>
+  <input type="text" id="input">
+  <select name="select" id="select"></select>
+  <button id="add-button">항목 추가</button>
+  
+  <script>
+    let root = document.getElementById('root');
+    let input = document.getElementById('input');
+    let select = document.getElementById('selest');
+    let names = ["정호연", "이연승", "겨울이", "까미"];
+    
+    function options() {
+      let length = names.length;
+      select.innerHTML = '';
+      for (let i = 0; i < length; i++ ) {
+        let option = document.createElement('option');
+        option.value = i;
+        option.text = `항목 ${i + 1}`
+        select.appendChild(option);
+      }
+      let lastOption = document.createElement('option');
+      lastOption.text = "마지막";
+      select.appendChild(lastOption);
+    }
+
+    function view() {
+      root.innerHTML = '';
+      for (let i = 0; i < names.length; i++) {
+        let div = document.createElement('div');
+        div.textContent = names + ` ${i + 1}`;
+        root.appendChild(div);
+      }
+      options()
+    }
+
+    function value() {
+      return input.value.trim();
+    }
+
+  </script>
+</body>
+</html>
