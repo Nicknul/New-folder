@@ -1,8 +1,11 @@
+let url = "http://localhost:3000";
+
+let reqL1= fetch(url + './data.json')
+
 let root = document.getElementById('root');
 let newDiv = document.createElement('div');
 let button = document.getElementById('button');
 root.appendChild(newDiv);
-
 
 let string = "https://data1.pokemonkorea.co.kr/newdata/pokedex/full/";
 let png01 = "01.png";
@@ -42,5 +45,5 @@ function pokemonSelector() {
 console.log(pokemonSelector());
 
 button.addEventListener('click',function(){
-  let loop = pokemonSelector()
+  pokemonSelector()
 });
