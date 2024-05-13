@@ -111,7 +111,7 @@ http.createServer((req, res) => {
     return;
   }
 
-}).listen(3000, () => {
+}).listen(8000, () => {
   console.log("서버 잘 열림");
-  console.log("서버 주소는: http://localhost:3000");
+  console.log("서버 주소는: http://localhost:8000");
 });

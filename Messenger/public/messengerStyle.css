@@ -1,0 +1,18 @@
+#root {
+  width: 500px;
+  height: 800px;
+  background-color: slategray;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+#input {
+ border: 1px solid slategray; 
+ height: 100px;
+}
+
+#button {
+  width: 50px;
+  margin-left: 450px;
+}
