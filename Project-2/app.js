@@ -89,6 +89,22 @@ const server = http.createServer((req, res) => {
       res.write(data);
       res.end();
     }
+    if(req.url === '/normal.js') {
+      const type = fs.readFileSync("./public/types/normal.js", "utf-8");
+      
+      res.statusCode = 200;
+      res.setHeader('Constent-Type', 'application/javascript, charset=utf-8');
+      res.write(type);
+      res.end();
+    }
+    if(req.url === '/allTypes.css') {
+      const type = fs.readFileSync("./public/types/allTypes.css", "utf-8");
+      
+      res.statusCode = 200;
+      res.setHeader('Constent-Type', 'text/css, charset=utf-8');
+      res.write(type);
+      res.end();
+    }
   }
 })
 

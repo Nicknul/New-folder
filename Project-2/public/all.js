@@ -8,37 +8,11 @@ async function pokemonNamesKo() {
 }
 pokemonNamesKo()
 
-async function pokemonNamesEn() {  
-  let a = await fetch(url + '/dataEn.json', {method:"GET"})
-  let english = await a.json()
-  let languageEn = namesEn(english)
-}
-pokemonNamesEn()
-
-let apiString = "https://pokeapi.co/api/v2/pokemon/"
-
 let grid = document.getElementById('grid');
 
 let urlString = "https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/";
 let png01 = "01.png"
 let png03 = "03.png"
-
-function namesEn(array) {
-  for(let i = 1; i < array.length; i++) {
-    // console.log(array[i - 1])
-    async function pokemonApi(){
-      let b = await fetch(apiString + i)
-      let c = await b.json()
-      // console.log(c.types[0].type.name)
-      console.log(c.name)
-      // if(array[i - 1]) {
-      //   console.log("정답!")
-      // }
-    }
-    pokemonApi();
-  }
-  return
-}
 
 function pokemonNames(array) {
   for(let i = 1; i < array.length + 1; i++) {
