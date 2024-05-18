@@ -21,20 +21,38 @@ const memberNames = [
   "황재민"
 ]
 
-let input = document.getElementById('name_input');
-let colorBox = document.getElementById('colorBox');
-console.log(input.value);
+function a() {
+  let count = [];
+  return count
+}
+console.log(a())
 
-input.addEventListener("input", function() {
-  for(let i = 0; i < memberNames.length; i++) {
-    if(input.value === memberNames[i]) {
-      colorBox.style.backgroundColor = "lightgreen"
-      console.log("값이 있습니다.")
-    } else if(input.value === ""){
-      colorBox.style.backgroundColor = "pink"
-      console.log("값이 없습니다.")
-    }
-  }
+
+
+
+
+
+let input = document.getElementById('name');
+let box = document.getElementById('box');
+
+
+input.addEventListener("change", function() {
+  let add = [];  
+  let count = add.push(input.value)
+  console.log(add)
+
+  // if(add[0] === memberNames[0]){
+  //   box.style.backgroundColor = "greenyellow"
+  // }
+
+  // for(let i = 0; i < memberNames.length; i++) {
+  //   console.log(add[i])
+  //   if(add[i] === memberNames[i]) {
+  //     box.style.backgroundColor = "greenyellow"
+  //   } else if(add[i] === ""){
+  //     box.style.backgroundColor = "crimson"
+  //   }
+  // }
 })
 
 

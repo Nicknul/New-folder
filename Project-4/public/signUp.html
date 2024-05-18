@@ -4,17 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>sign up</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="signUp.css">
 </head>
 <body>
   <div id="root">
     <form action="/signup" method="get">
-      나의 이름 <input
-        type="text"
-        name="name"
-        id="name_input"
-        placeholder="나의 이름을 작성하세요. ex : 공욱재">
-      <div id="colorBox"></div>
+      나의 이름 <br>
+      <input type="text" name="name" id="name" placeholder="나의 이름을 작성하세요. ex : 공욱재">
+      <div id="box"></div>
+
+      비밀번호<br>
+      <input type="text" name="password" id="password" placeholder="정자 이름과 핸드폰 뒷자리 4자리를 작성해주세요. ex:공욱재0957">
+
+      <div id="box"></div>
+    </form>
+  </div>
+
+  <script src="signUp.js"></script>
+  
+</body> 
+</html>
+
+
+
+
       <!-- <div>비밀번호</div>
       <input type="text" name="password" id="password" placeholder="정자 이름과 핸드폰 뒷자리 4자리를 작성해주세요. ex : 공욱재0957">
       <div>비밀번호 확인</div>
@@ -23,11 +37,3 @@
       <input type="text" name="email" id="email" placeholder="이메일 주소 양식에 맞게 작성해주세요.">
       <div>핸드폰 번호</div>
       <input type="text" name="phoneNumber" id="phoneNumber" placeholder="핸드폰 번호를 입력해주세요."> -->
-    </form>
-
-  </div>
-
-  <script src="signUp.js"></script>
-  
-</body> 
-</html>
