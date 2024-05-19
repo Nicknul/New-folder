@@ -16,7 +16,7 @@ let png03 = "03.png"
 
 function pokemonNames(array) {
   for(let i = 1; i < array.length + 1; i++) {
-    let newImg = new Image(100, 100);
+    let newImg = new Image(160, 160);
     let newDiv = document.createElement('div')
     let nameDiv = document.createElement('div')
     nameDiv.textContent = array[i - 1]

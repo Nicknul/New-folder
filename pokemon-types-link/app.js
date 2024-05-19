@@ -105,6 +105,14 @@ const server = http.createServer((req, res) => {
       res.write(type);
       res.end();
     }
+    if(req.url === '/fire.js') {
+      const type = fs.readFileSync("./public/types/fire.js", "utf-8");
+      
+      res.statusCode = 200;
+      res.setHeader('Constent-Type', 'application/javascript, charset=utf-8');
+      res.write(type);
+      res.end();
+    }
   }
 })
 

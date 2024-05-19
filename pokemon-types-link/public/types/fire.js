@@ -29,13 +29,13 @@ function pokemonNames(ko, en) {
       let b = await a.json()
       let type0 = b.types[0].type.name
       
-      if(type0 === "normal") {
+      if(type0 === "fire") {
         let img = new Image (160, 160)
         let div = document.createElement('div');
         let name = document.createElement('div');
         let type = document.createElement('div');
         name.textContent = ko[i - 1]
-        type.textContent = "노멀"
+        type.textContent = "불꽃"
         div.appendChild(img)
         div.appendChild(name)
         div.appendChild(type)
