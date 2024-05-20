@@ -10,7 +10,7 @@ form {
 }
 
 input {
-  width: 25%;
+  width: 400px;
   padding: 10px 20px;
   margin: 5px 0;
   box-sizing: border-box;
@@ -27,7 +27,11 @@ input[type="text"] {
   margin-left: 50px;
 } */
 
-#box {
+#namebox,
+#passwordBox,
+#confirmPasswordBox,
+#e-mailBox,
+#phoneNumberBox {
   width: 30px;
   height: 30px;
   border-radius: 25%;

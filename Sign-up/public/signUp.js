@@ -21,47 +21,41 @@ const memberNames = [
   "황재민"
 ]
 
-function a() {
-  let count = [];
-  return count
+let names = document.getElementById('name');
+let namebox = document.getElementById('namebox');
+// console.log(password)
+
+//* 체크박스 색상 함수
+function yellowgreen() {namebox.style.backgroundColor = "yellowgreen"}
+function crimson() {namebox.style.backgroundColor = "crimson"}
+
+// * 이름검사
+function checkName(array, name) {
+  for(let i = 0; i < array.length; i++) {
+    if(name === array[i]) {
+      yellowgreen()
+      break;
+    } else {
+      crimson()
+    }
+  }
 }
-console.log(a())
 
+let phoneNumber = document.getElementById('phoneNumber');
 
-
-
-
-
-let input = document.getElementById('name');
-let box = document.getElementById('box');
-
-
-input.addEventListener("change", function() {
-  let add = [];  
-  let count = add.push(input.value)
-  console.log(add)
-
-  // if(add[0] === memberNames[0]){
-  //   box.style.backgroundColor = "greenyellow"
-  // }
-
-  // for(let i = 0; i < memberNames.length; i++) {
-  //   console.log(add[i])
-  //   if(add[i] === memberNames[i]) {
-  //     box.style.backgroundColor = "greenyellow"
-  //   } else if(add[i] === ""){
-  //     box.style.backgroundColor = "crimson"
-  //   }
-  // }
-})
-
-
-// function a(b) {
-//   if(b.value === "") {
-//     colorBox.style.backgroundColor = "pink"
-//   } else {
-//     colorBox.style.backgroundColor = "lightgreen"
-//   }
-//   return b
+// const auto = (target) => {
+//   target.value = target.value
+//   .replace(/[^0-9]/g, '')
+//   .replace(/^(\d{0,3})(\d{0,4})(\d{0,4})$/g, "$1-$2-$3")
+//   .replace(/(\-{1,2})$/g, "");
 // }
-// a(input)
+
+function auto(target) {
+  target.value = target.value
+  
+}
+
+document.addEventListener('input',function() {
+  checkName(memberNames, names.value)
+  auto(phoneNumber)
+});
