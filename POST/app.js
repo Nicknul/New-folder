@@ -3,6 +3,7 @@ const fs = require('fs');
 
 const server = http.createServer((req,res) => {
   if(req.method === "POST") {
+    let body = '';
     if(req.url === '/') {
       console.log("유효성 검사:"+req.url)
     }
