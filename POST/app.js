@@ -48,27 +48,43 @@ const server = http.createServer((req, res) => {
         const parsedData = new URLSearchParams(body);
         //? 변수 parsedDate를 선언 = POST에 분석할 문자열을 가져와줘
         const title = parsedData.get('title');
-        //? title 변수 = 분석한 문자열에 있는 'title' 문자열을 가져와줘
+        //? title 변수 = 분석한 문자열에 있는 'title' 문자열을 값을 가져와줘 ex) title=내보내기
         //* body에 있는 title는 html에 있는 제목 input의 value, ex) title=정호연
         const content = parsedData.get('content');
-        //? content 변수 = 분석한 문자열에 있는 'content' 문자열을 가져와줘
+        //? content 변수 = 분석한 문자열에 있는 'content' 문자열의 값을 가져와줘 ex) content=성공
         //* body에 있는 content는 html에 있는 내용 input의 value, ex) content=배고프다
         const jsonData = {
-          title: title,
-          content: content,
+          title: title, //* 내보내기
+          content: content, //* 성공
         };
         //? 변수 jsonData 선언하고 객체로 만들어 줌
         //? 항목 이름 : title, 항목의 값 : 변수 title의 값
         const jsonDataString = JSON.stringify(jsonData, null, 2);
-        //?
-        fs.writeFile(path.join(__dirname, 'data.json'));
+        //? jsonDataString 변수를 선언
+        //? 변수의 할당 값 = json의 형태의 문자열로 바꿔줘 (변수 jsonData의 객체 안에 있는 데이터를)
+        fs.writeFile(path.join(__dirname, 'data.json'), jsonDataString, (err) => {
+          //? 파일을 써줘(생성해줘)(경로를 합쳐줘(현재 디렉토리의 경로에 'data.json'의 문자열을), 생성한 파일 안에 있는 내용은 변수 jsonDataString 데이터를 넣어줘, callback함수 (err))
+          if (err) {
+            res.writeHead(500, { 'Content-Type': 'text/plain; charset=utf-8' });
+            res.end('서버 자체 에러');
+            return;
+          }
+          res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
+          let jsonResponse = JSON.stringify({ message: '데이터가 성공적으로 저장됨' });
+          res.end(jsonResponse);
+        });
       });
+    } else {
+      res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+      res.end('404 code는 페이지를 찾을 수 없음');
     }
+  } else {
+    res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+    res.end('404 code는 페이지를 찾을 수 없음');
   }
 });
 
 const port = 8000;
-
 server.listen(port, (err) => {
   if (err) {
     console.error('Error');
