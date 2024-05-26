@@ -54,8 +54,8 @@ const server = http.createServer((req, res) => {
         //? content 변수 = 분석한 문자열에 있는 'content' 문자열의 값을 가져와줘 ex) content=성공
         //* body에 있는 content는 html에 있는 내용 input의 value, ex) content=배고프다
         const jsonData = {
-          title: title, //* 내보내기
-          content: content, //* 성공
+          title: title,
+          content: content,
         };
         //? 변수 jsonData 선언하고 객체로 만들어 줌
         //? 항목 이름 : title, 항목의 값 : 변수 title의 값

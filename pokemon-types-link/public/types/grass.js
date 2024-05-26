@@ -27,13 +27,13 @@ function pokemonNames(ko, en) {
       let b = await a.json();
       let type0 = b.types[0].type.name;
 
-      if (type0 === 'fire') {
+      if (type0 === 'grass') {
         let img = new Image(160, 160);
         let div = document.createElement('div');
         let name = document.createElement('div');
         let type = document.createElement('div');
         name.textContent = ko[i - 1];
-        type.textContent = '불꽃';
+        type.textContent = '풀';
         div.appendChild(img);
         div.appendChild(name);
         div.appendChild(type);
@@ -43,11 +43,11 @@ function pokemonNames(ko, en) {
         img.appendChild(imgText);
 
         if (b.name === lowName) {
-          if (`${i - 1}`[1] === undefined) {
+          if (`${i}`[1] === undefined) {
             img.src = imgUrl + `000${i}` + png01;
-          } else if (`${i - 1}`[2] === undefined) {
+          } else if (`${i}`[2] === undefined) {
             img.src = imgUrl + `00${i}` + png01;
-          } else if (`${i - 1}`[3] === undefined) {
+          } else if (`${i}`[3] === undefined) {
             if (i === 131) {
               img.src = imgUrl + `0${i}` + png03;
             } else {
