@@ -8,7 +8,7 @@ const server = http.createServer((req, res) => {
     if (req.url === '/') {
       fs.readFile(path.join(__dirname, '/public/blog.html'), (err, data) => {
         if (err) {
-          res.writeHead(500, { 'Content-Type': 'text/plain; charset=utf-8' });
+          res.writeHead(500, { 'Content-Type': 'text/plain' });
           res.end('500 code는 서버 자체의 에러');
           return;
         }
